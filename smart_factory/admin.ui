@@ -69,7 +69,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="btnHome">
+     <widget class="QPushButton" name="btnMain">
       <property name="font">
        <font>
         <family>Verdana</family>
@@ -623,5 +623,25 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>btnMain</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>btnHomeClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>645</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>626</x>
+     <y>2</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>btnHomeClicked()</slot>
+ </slots>
 </ui>

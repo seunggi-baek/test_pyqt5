@@ -465,7 +465,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -494,7 +494,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="btnStart">
       <property name="font">
        <font>
         <family>Verdana</family>
@@ -509,7 +509,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="btnStop">
       <property name="font">
        <font>
         <family>Verdana</family>
@@ -524,7 +524,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="btnAdmin">
       <property name="font">
        <font>
         <family>Verdana</family>
@@ -538,9 +538,61 @@
       </property>
      </widget>
     </item>
+    <item>
+     <widget class="QPushButton" name="btnHome">
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>홈으로</string>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>btnAdmin</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>btnAdminClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>531</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>564</x>
+     <y>3</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnHome</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>btnHomeClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>712</x>
+     <y>54</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>702</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>btnAdminClicked()</slot>
+  <slot>btnHomeClicked()</slot>
+ </slots>
 </ui>

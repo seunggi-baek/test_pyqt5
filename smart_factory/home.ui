@@ -79,6 +79,28 @@
     <string>관리자</string>
    </property>
   </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>801</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:red;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>btnMain</zorder>
+  <zorder>btnAdmin</zorder>
  </widget>
  <resources/>
  <connections>
@@ -86,7 +108,7 @@
    <sender>btnMain</sender>
    <signal>clicked()</signal>
    <receiver>Dialog</receiver>
-   <slot>btnStartToMain()</slot>
+   <slot>btnMainClicked()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>401</x>
@@ -102,7 +124,7 @@
    <sender>btnAdmin</sender>
    <signal>clicked()</signal>
    <receiver>Dialog</receiver>
-   <slot>btnStartToAdmin()</slot>
+   <slot>btnAdminClicked()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>694</x>
@@ -116,7 +138,7 @@
   </connection>
  </connections>
  <slots>
-  <slot>btnStartToMain()</slot>
-  <slot>btnStartToAdmin()</slot>
+  <slot>btnMainClicked()</slot>
+  <slot>btnAdminClicked()</slot>
  </slots>
 </ui>
