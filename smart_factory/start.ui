@@ -58,7 +58,7 @@
     <string>사용자</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btnAdmin">
    <property name="geometry">
     <rect>
      <x>640</x>

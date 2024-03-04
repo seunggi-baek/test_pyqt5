@@ -54,7 +54,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_5">
+     <widget class="QPushButton" name="btnTestStart">
       <property name="font">
        <font>
         <family>Verdana</family>
@@ -65,6 +65,21 @@
       </property>
       <property name="text">
        <string>테스트 시작</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnHome">
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>홈으로</string>
       </property>
      </widget>
     </item>
